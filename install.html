@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School</title>
+        <!--    link for css     -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="swiper.css">
+        <!--    links for my icons from fontawesome     -->
+        <link rel='stylesheet' href='css/all.min.css'>
+        <link rel='stylesheet' href='css/fontawesome.min.css'>
+        <!-- links for swiper from swiperjs -->
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+<body>
+    
+    <header>
+        <div class="nav-left">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <a href="#" class="logo">Emmanuel Gallery</a>
+        </div>
+        <div class="mid-nav">
+            <input type="text" placeholder="Search For Content">
+            <div class="tooltip">
+                <i class="fas fa-search"></i>
+                <div class="tooltiptext">Search</div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="mail">
+                <h3>E</h3>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="meun">
+            <div class="meun-head">
+                <h3>Table of Contents</h3>
+            </div>
+            <ul>
+                <!-- <i class="fas fa-caret-right"></i> -->
+                <!-- <i class="fas fa-home"></i> -->
+                <!-- <i class="fab fa-slack"></i> -->
+                <div class="home">
+                    <i class="fas fa-home"></i>
+                    <a href="#">Home</a>
+                </div>
+                
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="index.html">Introduction</a></li>
+                </div>
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="install.html">Installation</a></li>
+                </div>
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="usage.html">Usage</a></li>
+                </div>
+                <div class="features">
+                    <i class="fab fa-slack"></i>
+                    <a href="features.html">Features</a>
+                </div>
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="#">Row Layout</a></li>
+                </div>
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="#">Columns Layout</a></li>
+                </div>
+                <div class="links">
+                    <i class="fas fa-caret-right"></i>
+                    <li><a href="#">Masonry Layout</a></ol>
+                </div>
+            </ul>
+        </div>
+        <div class="content install-page">
+            <div class="install">
+                <h2>Installation</h2>
+                <h3>Prerequisites</h3>
+                <p>Before you begin, ensure that you have <a href="#">Node.js</a> and <a href="#">npm</a> installed on your machine.</p>
+                <ol style="padding-top: 5px;">
+                    <li>Clone the repository:  <b><a href="#">git clone https://github.com/your-username/portfolio-gallery.git</a></b></li>
+                    <li>Navigate to the project directory: <b>cd portfolio-gallery</b></li>
+                    <li>Install dependencies: <b>npm install</b></li>
+                    <li>Start the development server: <b>npm start</b></li>
+                    <li>Open your browser and visit <b>http://localhost:3000</b> to view the gallery.</li>
+                </ol>
+                <h3>Default installation</h3>
+                <p><b>Run following commands to add Emmanuel Gallery to your project:</b></p>
+                <div id="copy1">
+                    <pre style="margin-top: 5px;"><code><span class="function">npm install</span> <span>@emmanuelgallery/react @emotion/react @emotion/styled</span></code></pre>
+                    <div class="copy-btn1">
+                        <a href="#" title="Copy"><h4><i class="far fa-copy"></i> Copy</h4></a>
+                    </div>
+                </div>
+                <h3>Poppins font</h3>
+                <p>Emmanuel Gallery uses the Poppins font by default. Add it to your project with the Google Fonts CDN.</p>
+                <div id="copy2">
+                    <pre>
+<code>&lt; <span class="keyword">link</span>  <span class="strings">rel</span> = <span class="function">" preconnect "</span>  <span class="strings">href</span> = <span class="function">" https://fonts.googleapis.com "</span>  / &gt;
+&lt; <span class="keyword">link</span>  <span class="strings">rel</span> = <span class="function">" preconnect "</span>  <span class="strings">href</span> = <span class="function">" https://fonts.gstatic.com "</span>  <span class="strings">crossorigin</span> / &gt;
+&lt; <span class="keyword">link</span>
+    <span class="strings">rel</span> = <span class="function">" stylesheet "</span>
+    <span class="strings">href</span> = <span class="function">" https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap "</span>
+/ &gt;
+</code></pre>
+                    <div class="copy-btn2">
+                        <a href="#" title="Copy"><h4><i class="far fa-copy"></i> Copy</h4></a>
+                    </div>
+                </div>
+                <h3>Icons</h3>
+                <p>To install the Material Icons font in your project using the Google Web Fonts CDN, add the following code snippet inside your project's <code style="border: 1px solid #999999; border-radius: 8px; background: #c0c0c0;">&lt;head&gt;</code> tag:</p>
+                <div id="copy3">
+                    <pre style="margin:  5px 0;">
+<code>&lt; <span class="keyword">link</span>
+    <span class="strings">rel</span> = <span class="function">" stylesheet "</span>
+    <span class="strings">href</span> = <span class="function">" https://fonts.googleapis.com/icon?family=Emmanuel+Icons "</span>
+/ &gt;</code></pre>
+                    <div class="copy-btn3">
+                        <a href="#" title="Copy"><h4><i class="far fa-copy"></i> Copy</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <div class="prev-btn">
+                    <i class="fas fa-long-arrow-alt-left"></i> <a href="index.html">Introduction</a> 
+                </div>
+                <div class="next-btn">
+                    <a href="usage.html">Usage</a> <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="footer">
+                <h3>Emmanuel Tobi</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/emmanuel.oluwatobi.7583"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/Emmanuel_oluwatobi3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/Emmanuel686?s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-oluwatobi-8a35b2226"><i class="fab fa-linkedin-in"></i></a>
+                    <p> Made with <i class="fas fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- main javascript -->
+    <script src="index.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
