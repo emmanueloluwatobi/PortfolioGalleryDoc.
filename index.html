@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School</title>
+    <title>Portfolio Gallery</title>
     <!--    link for css     -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
@@ -78,15 +78,13 @@
                 </div>
                 <div class="links">
                     <i class="fas fa-caret-right"></i>
-                    <li><a href="#">Columns Layout</a></li>
+                    <li><a href="columns-layout.html">Columns Layout</a></li>
                 </div>
                 <div class="links">
                     <i class="fas fa-caret-right"></i>
-                    <li><a href="#">Masonry Layout</a></ol>
+                    <li><a href="masonry-layout.html">Masonry Layout</a></ol>
                 </div>
-
                 
-                <h2></h2>
             </ul>
         </div>
         <div class="content home-page">
@@ -108,7 +106,7 @@
                             <div class="text position-absolute top-50 start-50 translate-middle" style="z-index: 99;">
                                 <div class="texts">
                                     <h1>Welcome to my</h1>
-                                    <h1><span>visual journey<span class="sparkles">&#10024;</span>!</span></h1>
+                                    <h1>visual journey! <span class="sparkles">&#10024;</span></h1>
                                     <p>Glide through a mosaic of memories as each image whispers a unique tale. Dive into the beauty captured, and let the essence of creativity unfold. <span class="remove">Ready to embark on this visual odyssey? Tap 'Expore' below and let the images speak louder than words.</span></p>
                                 </div>
                                 <a href="#">Explore </a>
@@ -126,32 +124,36 @@
                 <h3>Server-Side Rendering (SSR)</h3>
                 <p>Embracing Server-Side Rendering (SSR) in our Portfolio Gallery offers tangible benefits for performance, search engine optimization, and user experience. SSR involves rendering the initial HTML content on the server, enhancing the gallery's loading speed and ensuring optimal visibility on search engines. <br>To implement SSR in your portfolio, start by configuring SSR settings and integrating them into your chosen server-side framework. This step ensures a seamless transition to server-side rendering. Manage stylesheets effectively, loading critical CSS on the server to maintain a consistent visual presentation across devices.</p>
                 <br>
-                <h3>Sponsors</h3>
             </div>
+            <h3>Sponsors</h3>
             <div class="sponsor">
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-1.png" alt="">
+                <div class="sponsor-right">
+                    <div class="sponsor-img">
+                        <img src="img/amazon.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/disney.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/google.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/spotify.svg" alt="">
+                    </div>
                 </div>
-                <div class="sponsor-img">
-                    <img src="img/sponsor-21.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-3.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/sponsor-4.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-15.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-16.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-7.png" alt="">
-                </div>
-                <div class="sponsor-img">
-                    <img src="img/Sponsor-8.png" alt="">
+                <div class="sponsor-left">
+                    <div class="sponsor-img">
+                        <img src="img/tiktok.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/microsoft.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/netflix.svg" alt="">
+                    </div>
+                    <div class="sponsor-img">
+                        <img src="img/airbnb.svg" alt="">
+                    </div>
                 </div>
             </div>
             <!-- <div class="install">
@@ -226,31 +228,6 @@
     <script src="swiperjs.js"></script>
     <!-- main javascript -->
     <script src="index.js"></script>
-    <!-- <script>
-         // Get the content element and the copy button
- var content = document.getElementById("copycontent");
-//  var copy = document.getElementById("copy");
-
- // Add a click event listener to the copy button
- copy.addEventListener("click", function() {
-   // Select the content element
-   var range = document.createRange();
-   range.selectNode(copycontent);
-   window.getSelection().addRange(range);
-   
-   try {
-     // Copy the selection to the clipboard
-     document.execCommand("copy");
-     alert("Text copied to clipboard");
-   } catch(err) {
-     alert("Could not copy text");
-   }
-
-   // Remove the selection
-   window.getSelection().removeAllRanges();
- });
-    </script> -->
-    
 </body>
 </html>
 

@@ -50,6 +50,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 14px 23px;
+    border-bottom: 1px solid var(--border-color);
 }
 header .nav-left, .nav-right, .mid-nav, .meun ul .links{
     display: flex;
@@ -177,9 +178,8 @@ main .meun{
 }
 main .content{
     margin-left: 17vw;
-    padding: 20px 10px 7px 30px;
+    padding: 20px 7px 7px 30px;
     width: 80vw;
-    /* height: 90vh; */
     background: #fff;
     background: var(--body-bg-white-color);
 }
@@ -247,8 +247,8 @@ main .text p{
     padding-bottom: 15px;
     font-size: 1.15em;
 }
-main .text span .sparkles{
-    color: blue !important;
+main .texts span .sparkles{
+    color: #fbff00 !important;
 }
 main .text a{
     padding: 8px 20px;
@@ -263,7 +263,7 @@ main .text a{
 .content h1{
     font-size: 3em;
 }
-.content h1 span{
+.content .texts h1:nth-child(2){
     font-family: 'Lobster', cursive;
 }
 .content .intro{
@@ -307,6 +307,11 @@ main .text a{
     flex-wrap: wrap;
     margin-top: 8px;
     margin-right: 10px;
+}
+.sponsor .sponsor-left, .sponsor .sponsor-right{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 48.5%;
 }
 .sponsor-img{
     width: 90px;
@@ -529,9 +534,30 @@ code{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-  }
+}
+.mesonry-page source{
+    margin-top: -150px !important;
+}
+
+.mesonry-time{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.countdown span{
+    background: #f3f3f3;
+    border: 1px solid var(--border-color);
+    padding: 12px 9px;
+    margin: 1px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
 
 
+
+
+
+  
 
 
 
@@ -544,6 +570,9 @@ code{
 
   /*     max-width section     */
 @media only screen and (max-width: 1150px){
+    header{
+        padding: 12px 20px;
+    }
     header .logo{
         font-size: 2.1em;
     }
@@ -574,6 +603,9 @@ code{
     }
     main{
         margin-top: 10vh;
+    }
+    .carosal {
+        margin-top: 30px;
     }
     main .content {
         width: 100vw;
@@ -638,6 +670,12 @@ code{
     .text h1{
         font-size: 3em !important;
     }
+    .content .texts h1:nth-child(2){
+        font-family: 'Lobster', cursive;
+    }
+    .text p{
+        font-size: 1em !important;
+    }
     .start-50 {
         left: 40%;
     }
@@ -652,6 +690,9 @@ code{
     }
     .next .next-btn, .next .prev-btn{
         padding: 3px 9px;
+    }
+    .content .next {
+        margin-top: 5px;
     }
     .content .next a{
         font-size: 1.1em;
@@ -672,7 +713,12 @@ code{
     .social-links p{
         padding-top: 6px;
     }
-
+    .sponsor{
+        display: block;
+    }
+    .sponsor .sponsor-left, .sponsor .sponsor-right{
+        padding: 0 10px;
+    }
 }
 
 
@@ -681,7 +727,10 @@ code{
         width: 33vh !important;
     }
     .text h1{
-        font-size: 2.8em !important;
+        font-size: 2.5em !important;
+    }
+    .text h1:nth-child(2){
+        font-size: 2.3em !important;
     }
 }
 
@@ -718,7 +767,14 @@ code{
         left: 40% !important;
     }
     .text h1{
-        font-size: 2em !important;
+        font-size: 2.1em !important;
+    }
+    .content .texts h1:nth-child(2){
+        font-family: 'Lobster', cursive;
+        font-size: 1.9em !important;
+    }
+    .text p{
+        font-size: .9111em !important;
     }
     .text p .remove{
         display: none;
@@ -741,6 +797,13 @@ code{
     .next-btn:hover i{
         padding-right: 10px;
     }
+}
+
+@media only screen and (max-width: 430px){
+    .texts h1{
+        font-size: 1.9em !important;
+    }
+
 }
 
 
@@ -768,6 +831,12 @@ code{
     .text h1{
         font-size: 1.5em !important;
     }
+    .content .texts h1:nth-child(2){
+        font-size: 1.4em !important;
+    }
+    .texts .sparkles{
+        font-size: .8em;
+    }
     .content h2{
         font-size: 1.8em !important;
     }
@@ -776,5 +845,18 @@ code{
     }
     .content .next a{
         font-size: .9em;
+    }
+}
+
+
+@media only screen and (max-width: 315px){
+    .text h1{
+        font-size: 1.25em !important;
+    }
+    .content .texts h1:nth-child(2){
+        font-size: 1.2em !important;
+    }
+    .text p{
+        font-size: .877em !important;
     }
 }

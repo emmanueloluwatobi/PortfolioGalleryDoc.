@@ -100,5 +100,45 @@ window.addEventListener('load', function () {
     document.getElementById('skeleton11').style.display = 'none';
     document.getElementById('image12').style.display = 'block';
     document.getElementById('skeleton12').style.display = 'none';
-    
 });
+
+// JAVASCRIPT FOR MY TIME COUNT DOWN.
+document.addEventListener('DOMContentLoaded', function () {
+    const countdownElement = document.getElementById('countdown');
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+
+    // Set the target date (replace with your target date)
+    const targetDate = new Date('January 1, 2025 00:00:00').getTime();
+
+    function updateCountdown() {
+        const currentDate = new Date().getTime();
+        const timeDifference = targetDate - currentDate;
+
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        daysElement.textContent = days + 'D ';
+        hoursElement.textContent = hours + 'H ';
+        minutesElement.textContent = minutes + 'M ';
+        secondsElement.textContent = seconds + 'S ';
+    }
+
+    setInterval(updateCountdown, 1000);
+});
+
+
+
+
+
+
+
+
+
+
+
+
