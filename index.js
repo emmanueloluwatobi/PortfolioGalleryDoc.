@@ -134,6 +134,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//User
+user = document.querySelector(".user");
+user.onclick = function () {
+    userPic = document.querySelector(".user-dropdown");
+    userPic.classList.toggle("userinfo");
+}
+ 
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function () {
+    navBar = document.querySelector(".meun");
+    navBar.classList.toggle("active")
+};
 
 
 
